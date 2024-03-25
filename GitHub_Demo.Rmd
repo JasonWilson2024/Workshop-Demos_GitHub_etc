@@ -1,0 +1,35 @@
+---
+title: "GitHub Instructions"
+author: "Jason Wilson"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+The purpose of this file is to summarize the tutorial on getting set-up on GitHub in RStudio by David Keyes:
+https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
+
+# Reasons for using GitHub
+
+1. Marketable Skill (that still doesn't answer "why", see below...)
+2. Common way to show your code + project work to prospective employers, friends
+3. Version Control (tracks prior versions of your code)
+4. Group Version Control (collaborate on code with others - it handles the changes for you!)
+5. Free AI CoPilot for students
+
+# The Steps
+
+1. Install Git from https://git-scm.com/downloads
+2. Configure Git:
+  a. install.packages("usethis")
+  b. use_git_config(user.name = "Biola Bob", user.email = "biola.bob@biola.edu")
+  c. Check it from Terminal with biolabob$ git --version
+3. Initialize a Git Repository
+  a. use_git()
+  
+# Test
+I'm adding text
