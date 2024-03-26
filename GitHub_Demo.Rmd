@@ -42,4 +42,4 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
   d. Paste your token into the line (save it elsewhere, too)
 7. 
   
-# Changed the text
+# Edited your text!
