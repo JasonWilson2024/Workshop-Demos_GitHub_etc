@@ -40,6 +40,5 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
   b. Copy your token
   c. gitcreds_set()
   d. Paste your token into the line (save it elsewhere, too)
-7. 
+7. Use Push / Pull to send/retrieve your code to/from GitHub
   
-# Edited your text!
