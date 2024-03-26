@@ -22,7 +22,7 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
 5. Free AI CoPilot for students
 
 # The Steps
-
+## Local: Git on your computer
 1. Install Git from https://git-scm.com/downloads
 2. Configure Git:
   a. install.packages("usethis")
@@ -30,5 +30,16 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
   c. Check it from Terminal with biolabob$ git --version
 3. Initialize a Git Repository
   a. use_git()
+4. Make Commits: Use the "Git" tab in the upper right.  We can either hit the "History" button or the commit button.  This is "doing it".
+
+## Online: GitHub
+
+5. Obtain a GitHub account at https://github.com/join
+6. Make a GitHub token to connect RStudio with GitHub
+  a. library(gitcreds)
+  b. Copy your token
+  c. gitcreds_set()
+  d. Paste your token into the line (save it elsewhere, too)
+7. 
   
 # Changed the text
