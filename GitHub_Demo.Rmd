@@ -31,15 +31,6 @@ The purpose of this file is to provide the essentials of using GitHub and RStudi
 2. This page gives access to the Student Developer pack, which includes GitHub CoPilot (the AI tool to assist you with R, Python, SQL, and other languages): https://education.github.com/pack
 [For the teacher version, it did push me to a billing page, to which I had to scroll down in order to activate it.  Look around and use logic.]
 
-```{r}
-# Use Fisher's Iris data to show a multiple boxplot of the 3 different iris types, using the ggplot2 package
-library(ggplot2)
-ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
-  geom_boxplot()
-
-```
-
-
 # Getting Git on your computer and synced with RStudio
 ## References
 My thanks to David Keys' tutorial on getting set-up on GitHub in RStudio:
@@ -51,8 +42,10 @@ https://happygitwithr.com/ - Book length treatment of the topic
 
 ## Local: Git on your computer
 1. Install Git from https://git-scm.com/downloads
+  a. For Mac users, as long as Xcode is pre-installed, you don't need to install it.
 2. Configure Git:
   a. install.packages("usethis")
+     library(usethis)
   b. use_git_config(user.name = "Biola Bob", user.email = "biola.bob@biola.edu")
   c. Check it from Terminal with biolabob$ git --version
 3. Initialize a Git Repository
@@ -82,5 +75,10 @@ https://techserr.com/chatgpt-autocodin-in-r/
 For our purposes, however, I'm going to favor using GitHub's CoPilot, also accessible from RStudio.  My two reasons are: (1) My professor and your student accounts are free, and (2) Projected longevity of the GitHub solution:
 https://docs.posit.co/ide/user/ide/guide/tools/copilot.html
 
-1. 
+```{r}
+# Use Fisher's Iris data to show a multiple boxplot of the 3 different iris types, using the ggplot2 package
+library(ggplot2)
+ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
+  geom_boxplot()
 
+```
