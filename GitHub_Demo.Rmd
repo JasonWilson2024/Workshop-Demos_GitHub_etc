@@ -58,6 +58,16 @@ Note: These steps continue from David Keyes' page:
 https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
 
 1. Obtain a GitHub account at https://github.com/join
+  a. Click the profile picture on the top right
+  b. Go to Settings
+  c. Go to Developer Settings (its all the way down)
+  d. Click Personal Access Token
+  e. Click Classic
+  f. Write down a Note for the name
+  g. Select repo
+  h. Generate the Token
+  i. Copy the Token
+
 2. Make a GitHub token to connect RStudio with GitHub
   a. library(gitcreds)
   b. Copy your token
