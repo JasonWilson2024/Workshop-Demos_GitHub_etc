@@ -2,7 +2,11 @@
 title: "GitHub Instructions"
 author: "Jason Wilson"
 date: "`r Sys.Date()`"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    number_sections: true
 ---
 
 ```{r setup, include=FALSE}
@@ -10,8 +14,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
-The purpose of this file is to summarize the tutorial on getting set-up on GitHub in RStudio by David Keyes:
-https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
+The purpose of this file is to provide the essentials of using GitHub and RStudio together for Dr. Wilson's MATH 380 Statistical Consulting Practicum class.  See the Table of Contents for the current topics.
+
 
 # Reasons for using GitHub
 
@@ -21,7 +25,30 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
 4. Group Version Control (collaborate on code with others - it handles the changes for you!)
 5. Free AI CoPilot for students
 
-# The Steps
+# Get your Student GitHub Account
+
+1. Go here to sign up for your account.  It will take a few days to get verified: https://education.github.com
+2. This page gives access to the Student Developer pack, which includes GitHub CoPilot (the AI tool to assist you with R, Python, SQL, and other languages): https://education.github.com/pack
+[For the teacher version, it did push me to a billing page, to which I had to scroll down in order to activate it.  Look around and use logic.]
+
+```{r}
+# Use Fisher's Iris data to show a multiple boxplot of the 3 different iris types, using the ggplot2 package
+library(ggplot2)
+ggplot(iris, aes(x = Species, y = Sepal.Length, fill = Species)) +
+  geom_boxplot()
+
+```
+
+
+# Getting Git on your computer and synced with RStudio
+## References
+My thanks to David Keys' tutorial on getting set-up on GitHub in RStudio:
+https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
+For this section, if my steps are too brief, the above page should be consulted.  
+
+https://rstudio-conf-2020.github.io/r-for-excel/ - This workshop has further details, and its title, "R for Excel Users" is relevant for some in this class.
+https://happygitwithr.com/ - Book length treatment of the topic
+
 ## Local: Git on your computer
 1. Install Git from https://git-scm.com/downloads
 2. Configure Git:
@@ -32,13 +59,28 @@ https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
   a. use_git()
 4. Make Commits: Use the "Git" tab in the upper right.  We can either hit the "History" button or the commit button.  This is "doing it".
 
-## Online: GitHub
 
-5. Obtain a GitHub account at https://github.com/join
-6. Make a GitHub token to connect RStudio with GitHub
+# Getting GitHub online and syncing with your RStudio
+Note: These steps continue from David Keyes' page:
+https://rfortherestofus.com/2021/02/how-to-use-git-github-with-r
+
+1. Obtain a GitHub account at https://github.com/join
+2. Make a GitHub token to connect RStudio with GitHub
   a. library(gitcreds)
   b. Copy your token
   c. gitcreds_set()
   d. Paste your token into the line (save it elsewhere, too)
-7. Use Push / Pull to send/retrieve your code to/from GitHub
+3. Use Push / Pull to send/retrieve your code to/from GitHub
   
+
+# Working with a team from one GitHub repository
+
+
+# Using GitHub's AI CoPilot
+Note: There are multiple ways to work with generative AI from within RStudio.  One is with ChatGPT:
+https://techserr.com/chatgpt-autocodin-in-r/
+For our purposes, however, I'm going to favor using GitHub's CoPilot, also accessible from RStudio.  My two reasons are: (1) My professor and your student accounts are free, and (2) Projected longevity of the GitHub solution:
+https://docs.posit.co/ide/user/ide/guide/tools/copilot.html
+
+1. 
+
